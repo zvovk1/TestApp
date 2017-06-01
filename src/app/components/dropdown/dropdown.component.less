@@ -1,0 +1,52 @@
+@import 'variables/variables.less';
+
+.app-users-dropdown {
+  position: relative;
+  width: @drodpown-size;
+
+  ul.users-dropdown-content {
+    width: @drodpown-size;
+    height: @drodpown-size;
+    overflow: auto;
+    position: relative;
+    > li > a {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      width: 400px;
+    }
+  }
+
+  .user-title {
+    width: @drodpown-size;
+
+    .user-title-italic {
+      font-style: italic;
+    }
+
+    .user-title-content {
+      display: inline-block;
+      width: 340px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      text-align: left;
+      padding-top: 3px;
+    }
+
+    .caret {
+      display: inline-block;
+      margin-top: -10px;
+    }
+  }
+}
+
+.clear-control {
+  cursor: pointer;
+  font-style: italic;
+  color: #9c989c;
+  width: @drodpown-size;
+  text-align: right;
+  margin-top: 5px;
+}
+.clear-control:hover {
+  color: #464446;
+}
