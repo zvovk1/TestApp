@@ -11,9 +11,10 @@ Follow instruction bellow.
 ## Install Node Modules
 in your console run `npm insall`
 
-## Build Project and Start Server
+## Build Project and Start Server Automatically
 run project using commnad `npm start` 
-or do it separatly 
+
+## Build Project and Start Server Manually
 run command `ng build` and after build run next command `ng serve --host 0.0.0.0 --port 8080 ` 
 
 
