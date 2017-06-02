@@ -1,0 +1,36 @@
+<div class="users-dropdown-wrapper">
+  <div class="users-dropdown">
+    <div (click)="onDropdownToogle()" class="users-dropdown-button">
+      <div class="user-title">
+            <span class="user-title-content">
+            <span *ngIf="selectedUser && selectedUser.title">
+            User Title:
+            <span class="user-title-decoration-italic">
+              {{selectedUser.title}}
+            </span>
+          </span>
+          <span class="user-title-decoration-italic" *ngIf="!selectedUser"> Please Select a User </span>
+          </span>
+        <span class="caret"></span>
+      </div>
+    </div>
+
+    <ul class="users-dropdown-content" [ngClass]="{'users-dropdown-open': isDropdownOpen}">
+      <li class="users-dropdown-item"
+          *ngFor="let user of usersList"
+          (click)="onUserSelection(user)"
+          [ngClass]="{'is-selected-user': user === selectedUser}"
+          title="{{user.title}}">
+
+        <span class="user-droprown-item-content">{{user.title}}</span>
+
+      </li>
+    </ul>
+  </div>
+  <div [hidden]="!selectedUser" class="clear-control">
+    <span  (click)="onClearUserSelection()">
+      Clear
+    </span>
+  </div>
+</div>
+
