@@ -2,14 +2,19 @@
 
 This project was implemented by Eugene Vovk with [Angular CLI](https://github.com/angular/angular-cli) version 1.1.0.
 
-## Development server
+## How To Run
+Follow instruction bellow.
 
-Run `ng serve` or `npm start` for a dev server. Navigate to `http://localhost:8080/`. The app will automatically reload if you change any of the source files.
+## Clone Project From Repository 
+`git clone https://github.com/zvovk1/TestApp.git`
 
-## Build
+## Install Node Modules
+in your console run `npm insall`
 
-Run `ng build` to build the project or use `npm start` to build project and start on `http://localhost:8080/`. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+## Build Project and Start Server Automatically
+run project using command `npm start` 
 
-## Further help
+## Build Project and Start Server Manually
+run command `ng build` and after build run next command `ng serve --host 0.0.0.0 --port 8080 ` 
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
