@@ -17,4 +17,6 @@ run project using command `npm start`
 ## Build Project and Start Server Manually
 run command `ng build` and after build run next command `ng serve --host 0.0.0.0 --port 8080 ` 
 
+## Unit tests
+run command `npm test`;
 
