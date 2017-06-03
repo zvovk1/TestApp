@@ -25,7 +25,7 @@ export class UsersAppComponent implements OnInit {
   /*
   **  Fetch Users Models from server;
   */
-  public fetchUsers() : void {
+  private fetchUsers() : void {
     this.appService.getUsersList()
       .subscribe(
       (response: Array<UserModel>) =>
